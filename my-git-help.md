@@ -106,8 +106,7 @@
 * git checkout –b dev
   - 创建dev分支并从master切换到dev
   - 等价git branch dev（创建）    git checkout dev（切换）
-
-*　git branch –D dev
+* git branch –D dev
   - 强制删除未合并的分支dev
 
 -------------------
@@ -156,3 +155,5 @@
   - 要求：创建名为<账号名>.github.io的仓库，将网页文件放在master分支上
 * 使用gh-pages分支生成项目主页
   - 要求：将项目主页的网页文件放在项目仓库中的gh-pages分支，网址为<账号名>.github.io/<仓库名>。
+
+-------------------
