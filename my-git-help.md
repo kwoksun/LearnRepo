@@ -65,20 +65,16 @@
 * git remote add origin `https://github.com/<用户名>/<远程仓库名>.git`
   - 关联一个本地仓库到远程仓库
   - origin：远程仓库在本地的名字
-  
-  ### 关联远程仓库另一种方法
+	
+**关联远程仓库另一种方法**
+	
+> * 用gitbash输入命令 ssh-keygen –t rsa –C “`youremail@example.com`”	
+> * 一路回车，会生成 .ssh文件夹，id_rsa私钥，id_res.pub公钥
+> * 在github中的setting里add ssh key填上任意title，粘上id_res.pub的内容
+> * git remote add origin `git@github.com:<用户名>/<远程仓库名>.git`
+> * git push –u origin master
+> * 第一次push会有ssh警告，输入yes即可
 
-  用gitbash输入命令 ssh-keygen –t rsa –C “`youremail@example.com`”
-
-  一路回车，会生成 .ssh文件夹，id_rsa私钥，id_res.pub公钥
-
-  在github中的setting里add ssh key填上任意title，粘上id_res.pub的内容
-
-  git remote add origin `git@github.com:<用户名>/<远程仓库名>`.git
-
-  git push –u origin master
-
-  第一次push会有ssh警告，输入yes即可
 -------------------  
   
 * git remote –v
